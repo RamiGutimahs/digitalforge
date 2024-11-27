@@ -292,9 +292,9 @@
     <script>
         // Contenido de las secciones
         const content = {
-            mission: "<h3 class='section-title'>Nuestra Misión</h3><p> Todo sobre crecimiento Tomamos la mejora de la productividad agrícola como nuestro deber. Con soluciones eficientes y sustentables, protegemos cuidadosamente los cultivos mientras cuidamos el medio ambiente. Nos esforzamos por aumentar el rendimiento de las cosechas y trabajamos junto con nuestros empleados, socios y agricultores de todo el mundo, con el objetivo de lograr un crecimiento mutuo donde todos ganen.</p>",
-            vision: "<h3 class='section-title'>Nuestra Visión</h3><p> Ser una empresa líder mundial en protección de cultivos Nuestro foco está en el mercado de protección de cultivos, y nuestro compromiso es ser un líder mundial de primera clase en este segmento.</p>",
-            history: "<h3 class='section-title'>Historia</h3><p> DigitalForge, es una empresa dedicada a la importación de productos agroquímicos con base en Santa Cruz de la Sierra, inicia sus actividades de forma comercial el 2 de octubre de 2013, pasando por una reestructuración estratégica el 30 de noviembre de 2015, dando una mejor estructura a la firma tanto en la administración como en la parte comercial, para poder dar un mejor servicio y estar más cerca del agricultor. DigitalForge, cuenta con un excelente portafolio de productos los cuales en su mayoría provienen de la República de Uruguay, siendo nuestro principal proveedor TAMPA S.A. Un estricto control de producción ha garantizado productos del más alto nivel de calidad, avalado esto por su permanente crecimiento en nuestro mercado y la región. Todos estos años han confirmado el esfuerzo realizado y eso nos compromete a seguir adelante con el proceso de mejora continua para garantizarles a todos nuestros clientes productos confiables y bien formulados.</p>",
+            mission: "<h3 class='section-title'>Nuestra Misión</h3><p> Nuestra misión como empresa y equipo es la de facilitar la vida de las personas mediante el uso de la tecnología, desarrollando soluciones innovadoras enfocadas a la calidad y personalización del resultado, que proporcionen una grata experiencia de usuario, y que aporten valor y tengan un impacto positivo en el día a día de nuestra sociedad.</p>",
+            vision: "<h3 class='section-title'>Nuestra visión de aquello en lo que nos queremos convertir se resume en: Llegar a ser un referente como empresa de desarrollo, en los productos y servicios ofrecidos. Diseñar y desarrollar servicios y soluciones software diferenciales, que aporten un gran valor. Ser una empresa atractiva, como proveedor tecnológico y también como lugar de trabajo</p>",
+            history: "<h3 class='section-title'>Historia</h3><p> DigitalForge, es una empresa dedicada al desarrollo de software con base en Santa Cruz de la Sierra, inicia sus actividades de forma comercial el 2 de octubre de 2013, pasando por una reestructuración estratégica el 30 de noviembre de 2015, dando una mejor estructura a la firma tanto en la administración como en la parte comercial, para poder dar un mejor servicio y satisfacer al cliente con un producto de calidad.</p>",
             privacy: "<h3 class='section-title'>Política de Privacidad</h3><p>Nos comprometemos a proteger la información de nuestros clientes.</p>"
         };
 
@@ -345,7 +345,7 @@
         const message = userMessage.toLowerCase();
 
         if (message.includes("productos")) {
-            return "Tenemos una variedad de productos agroquímicos que pueden ayudarte a mejorar tu cosecha. ¿Te gustaría saber más sobre algún producto en particular?";
+            return "Tenemos una variedad de sistemas de gestion que pueden ayudar a mejorar tu empresa. ¿Te gustaría saber más sobre algún sistema en especifico?";
         } else if (message.includes("mision")) {
             return "Todo sobre crecimiento Tomamos la mejora de la productividad agrícola como nuestro deber. Con soluciones eficientes y sustentables, protegemos cuidadosamente los cultivos mientras cuidamos el medio ambiente. Nos esforzamos por aumentar el rendimiento de las cosechas y trabajamos junto con nuestros empleados, socios y agricultores de todo el mundo, con el objetivo de lograr un crecimiento mutuo donde todos ganen.";
         } else if (message.includes("vision")) {
@@ -357,8 +357,11 @@
         } else if(message.includes("chau")){
             return "Hasta luego, pero si tienes quieres saber mas informacion sobre nosotros no dudes en preguntar."
         }else if (message.includes("hola")){
-            return "Dime en que informacion de nuestra empresa deseas saber?"
-        }else{
+            return "Dime que informacion deseas saber de Digital Forge?"
+        }else if(message.includes("gracias")){
+            return "De nada, puedes volver a preguntar si deseas saber mas sobre Digital Forge"
+        }
+        {
             return "Lo siento, no entendí tu pregunta. ¿Podrías reformularla?";
         }
     }
